@@ -14,7 +14,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
             hosts.add_host '192.168.50.10', ['gitlab01.angus.com', 'gilab01']
         end
         #node.vm.provision "shell", path: "provision/setup-env.sh"
-        #node.vm.provision "shell", path: "provision/setup-env.sh"
+        node.vm.provision "shell", path: "provision/setup-env.sh"
         node.vm.provider "virtualbox" do |vb|
             vb.customize ["modifyvm", :id, "--memory", "1024"]
         end
