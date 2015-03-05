@@ -1,4 +1,4 @@
-sudo yum -y update
+#sudo yum -y update
 sudo yum -y install openssh-server
 sudo yum -y install postfix
 sudo yum -y install cronie
